@@ -1,0 +1,3 @@
+export const MAX_IMPORT_FILE_BYTES = 10 * 1024 * 1024;
+export const MAX_IMPORT_REQUEST_BYTES = 11 * 1024 * 1024;
+export const MAX_IMPORT_ROW_COUNT = 25_000;

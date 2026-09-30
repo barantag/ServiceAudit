@@ -1,0 +1,20 @@
+{$PILOT_HOSTNAME} {
+	encode zstd gzip
+	request_body {
+		max_size 12MB
+	}
+	header {
+		-Server
+		Strict-Transport-Security "max-age=31536000"
+		X-Content-Type-Options "nosniff"
+		X-Frame-Options "DENY"
+		Referrer-Policy "strict-origin-when-cross-origin"
+		Permissions-Policy "camera=(), geolocation=(), microphone=()"
+	}
+
+	basic_auth {
+		{$PILOT_BASIC_AUTH_USERNAME} {$PILOT_BASIC_AUTH_PASSWORD_HASH}
+	}
+
+	reverse_proxy app:3000
+}

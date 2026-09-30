@@ -1,0 +1,40 @@
+{
+  "name": "serviceaudit",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "db:migrate:prod": "node scripts/migrate-production.mjs",
+    "restore:drill": "node scripts/restore-drill.mjs",
+    "smoke:production": "node scripts/smoke-production.mjs",
+    "lint": "eslint",
+    "test:e2e": "playwright test",
+    "qa": "powershell -NoProfile -ExecutionPolicy Bypass -File .\\scripts\\qa.ps1"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "drizzle-orm": "^0.45.2",
+    "exceljs": "^4.4.0",
+    "next": "16.3.4",
+    "papaparse": "^5.7.0",
+    "pg": "^8.23.0",
+    "react": "19.2.8",
+    "react-dom": "19.2.8"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/papaparse": "^5.5.2",
+    "@types/pg": "^8.23.1",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "drizzle-kit": "^0.31.10",
+    "eslint": "^9",
+    "eslint-config-next": "16.3.4",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
