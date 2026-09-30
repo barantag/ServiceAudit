@@ -4,6 +4,8 @@ ServiceAudit, çok lokasyonlu işletmelerin bakım ve servis kayıtlarını anal
 
 Çalışan ve doğrulanmış bir MVP / kontrollü pilot için hazırlanmış prototiptir. (Üretim ortamına hazır bir SaaS değildir.)
 
+**Demo videosu:** [3 dakikalık ServiceAudit proje anlatımını izleyin.](https://youtu.be/Z_5B4LDe0Ew)
+
 ## Problem
 
 Bakım ve servis verileri genellikle Excel veya CSV dosyalarında dağınık haldedir. Bu karmaşıklık içinde olası mükerrer servisler, tekrarlayan arızalar, anormal derecede yüksek servis fiyatları ve garanti süresi içindeki ücretli servis işlemleri gözden kaçabilir.
@@ -117,5 +119,3 @@ Daha detaylı teknik ve operasyonel bilgiler için aşağıdaki dokümanları in
 - [Operasyonlar (OPERATIONS.md)](docs/OPERATIONS.md)
 - [Yol Haritası (ROADMAP.md)](docs/ROADMAP.md)
 
-## Demo Videosu
-(https://youtu.be/Z_5B4LDe0Ew)
