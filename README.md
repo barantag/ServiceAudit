@@ -68,13 +68,28 @@ Sistem içerisinde, test ve gösterim amacıyla tamamen **sentetik** bir NovaRet
 
 ## Yerel Çalıştırma
 
-Podman ve yerel PostgreSQL veritabanı gerektirir.
+Ön koşullar:
+
+- Node.js ve npm
+- Podman
+- Yapılandırılmış bir `.env.local` dosyası
+- Daha önce oluşturulmuş `serviceaudit-postgres` PostgreSQL container'ı
+
+Bağımlılıkları yükleyin:
+
+```powershell
+npm install
+```
+
+Ardından geliştirme ortamını başlatın:
 
 ```powershell
 .\scripts\dev-start.ps1
 ```
 
-Bu betik veritabanını başlatır, taşıma (migration) işlemlerini yapar ve [http://localhost:3000](http://localhost:3000) adresinde uygulamayı ayağa kaldırır.
+Bu betik gerektiğinde Podman makinesini ve mevcut `serviceaudit-postgres` container'ını başlatır, PostgreSQL'in hazır olmasını bekler ve Next.js geliştirme sunucusunu http://localhost:3000 adresinde çalıştırır.
+
+> Not: Betik PostgreSQL container'ını sıfırdan oluşturmaz ve veritabanı migration'larını otomatik olarak çalıştırmaz.
 
 ## Doğrulama / Test
 
