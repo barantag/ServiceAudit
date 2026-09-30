@@ -103,5 +103,4 @@ Daha detaylı teknik ve operasyonel bilgiler için aşağıdaki dokümanları in
 - [Yol Haritası (ROADMAP.md)](docs/ROADMAP.md)
 
 ## Demo Videosu
-
-[Demo videosu bağlantısı teslim sonrası buraya eklenecektir.]
+(https://youtu.be/Z_5B4LDe0Ew)
